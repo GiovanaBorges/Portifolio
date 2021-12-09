@@ -1,7 +1,9 @@
+import Layout from "./Layout";
+
 function App() {
   return (
     <div>
-      <h1>Bora começar ne</h1>
+      <Layout />
     </div>
   );
 }
