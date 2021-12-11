@@ -13,13 +13,25 @@ function Footer() {
         <FooterInformations>
           <h1>Giovana</h1>
           <div>
-            <a href="#">
+            <a
+              href="https://github.com/GiovanaBorges"
+              rel="noreferrer"
+              target="_blank"
+            >
               <Github size="25" />
             </a>
-            <a href="#">
+            <a
+              href="https://www.linkedin.com/in/giovana-franco-borges-607073184/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <Linkedin size="25" />
             </a>
-            <a href="#">
+            <a
+              href="https://www.behance.net/giovana_borges"
+              target="_blank"
+              rel="noreferrer"
+            >
               <Behance size="25" />
             </a>
           </div>
