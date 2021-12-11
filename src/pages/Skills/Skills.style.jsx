@@ -25,7 +25,7 @@ export const SkillsBox = styled.div`
   width: 15%;
   height: 15%;
 
-  margin: 1rem 2rem;
+  margin: 1rem 0.5rem;
 
   word-wrap: break-word;
 
@@ -43,12 +43,7 @@ export const SkillsBox = styled.div`
     a {
       text-decoration: none;
       font-size: 25px;
-
-      color: black;
-
-      &:hover {
-        color: #5f5da6;
-      }
+      color: #5f5da6;
     }
   }
   div > div {
@@ -62,6 +57,10 @@ export const SkillsBox = styled.div`
   }
 `;
 
-export const CodeIcon = styled(CodeSlash)``;
+export const CodeIcon = styled(CodeSlash)`
+  color: #5f5da6;
+`;
 
-export const Back = styled(Server)``;
+export const Back = styled(Server)`
+  color: #5f5da6;
+`;

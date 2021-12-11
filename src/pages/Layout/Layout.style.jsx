@@ -8,14 +8,12 @@ export const HomeWrapper = styled.section`
 
   display: flex;
   justify-content: space-around;
+  z-index: 100;
 
   align-items: center;
 
-  margin: 2rem;
-
-  img {
-    border-radius: 55px;
-  }
+  margin-top: 5rem;
+  margin-bottom: 2rem;
 `;
 
 export const HomeInformation = styled.div`
@@ -66,30 +64,32 @@ export const HomeSidenav = styled.ul`
 
   a {
     padding: 1rem;
-    color: black;
   }
 `;
 
-export const ZapIcon = styled(Github)`
+export const Git = styled(Github)`
   transition: 0.5s;
+  color: #5f5da6;
 
   &:hover {
-    color: rgb(228, 183, 173);
+    color: black;
   }
 `;
 
 export const LinkedinIcon = styled(Linkedin)`
   transition: 0.5s;
+  color: #5f5da6;
 
   &:hover {
-    color: rgb(228, 183, 173);
+    color: black;
   }
 `;
 
 export const BehanceIcon = styled(Behance)`
   transition: 0.5s;
+  color: #5f5da6;
 
   &:hover {
-    color: rgb(228, 183, 173);
+    color: black;
   }
 `;

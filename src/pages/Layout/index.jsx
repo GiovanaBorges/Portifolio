@@ -3,11 +3,14 @@ import {
   HomeInformation,
   HomeSidenav,
   HomeText,
-  ZapIcon,
+  Git,
   LinkedinIcon,
   BehanceIcon,
 } from "./Layout.style";
 
+import Sobre from "../Sobre";
+import Skills from "../Skills";
+import Project from "../Project";
 import { Button } from "../../components/Button";
 
 function Layout() {
@@ -21,7 +24,7 @@ function Layout() {
               rel="noreferrer"
               target="_blank"
             >
-              <ZapIcon size="25" />
+              <Git size="25" />
             </a>
             <a
               href="https://www.linkedin.com/in/giovana-franco-borges-607073184/"
@@ -43,15 +46,18 @@ function Layout() {
               <h2>Oi , eu sou</h2>
               <h1>Giovana Borges</h1>
               <h2>Fullstack java </h2>
-              <h3>Quer desenvolver algo comigo ou jogar algum jogo ?</h3>
+              <h3>Quer desenvolver algo comigo ou conversar ?</h3>
               <Button text={"Contato"} />
             </li>
           </HomeText>
         </HomeInformation>
         <div>
-          <img src={"fotita.png"} alt="image of Giovana Borges" />
+          <img src={"giovana_preview.png"} alt="image of Giovana Borges" />
         </div>
       </HomeWrapper>
+      <Sobre />
+      <Skills />
+      <Project />
     </>
   );
 }

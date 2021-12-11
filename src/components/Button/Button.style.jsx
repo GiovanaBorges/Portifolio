@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Btn = styled.button`
-  background-color: rgb(228, 183, 173);
+  background-color: #5f5da6;
   color: white;
 
   height: 3rem;
@@ -22,7 +22,7 @@ export const Btn = styled.button`
 `;
 
 export const Link = styled.a`
-  background-color: rgb(228, 183, 173);
+  background-color: #5f5da6;
   color: white;
 
   height: 3rem;
