@@ -12,7 +12,13 @@ function Skills() {
                 <CodeIcon size="35" />
               </li>
               <p>Frontend Development</p>
-              <a href="#">Ver mais</a>
+              <a
+                href="https://kenzie.com.br/blog/front-end/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Ver mais
+              </a>
             </div>
           </SkillsBox>
           <SkillsBox>
@@ -22,7 +28,13 @@ function Skills() {
               </li>
               <p>Backend Development</p>
 
-              <a href="#">Ver mais</a>
+              <a
+                href="https://kenzie.com.br/blog/back-end/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Ver mais
+              </a>
             </div>
           </SkillsBox>
         </SkillContent>
