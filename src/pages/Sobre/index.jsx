@@ -44,7 +44,7 @@ function Sobre() {
             </li>
           </div>
           <img
-            src="https://i.pinimg.com/originals/bd/4e/d3/bd4ed327189c2a56695beb91cd534570.gif"
+            src="https://i.pinimg.com/originals/e4/26/70/e426702edf874b181aced1e2fa5c6cde.gif"
             alt="coding"
           />
         </SobreInformations>
