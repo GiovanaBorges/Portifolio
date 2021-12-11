@@ -35,21 +35,24 @@ export const SobreInformations = styled.div`
     }
     h1 {
       font-weight: 400;
+      font-size: 20px;
     }
   }
   img {
     width: 50%;
+    border-radius: 10%;
+    opacity: 0.8;
   }
 `;
 
 export const ZapIcone = styled(Whatsapp)`
-  color: rgb(228, 183, 173);
+  color: #5f5da6;
 `;
 
 export const People = styled(UserOutline)`
-  color: rgb(228, 183, 173);
+  color: #5f5da6;
 `;
 
 export const Email = styled(Mail)`
-  color: rgb(228, 183, 173);
+  color: #5f5da6;
 `;
