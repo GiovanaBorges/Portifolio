@@ -12,15 +12,17 @@ export const HomeWrapper = styled.section`
 
   align-items: center;
 
+  padding: 5rem 0;
+
   margin-top: 5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 `;
 
 export const HomeInformation = styled.div`
   display: flex;
   justify-content: space-around;
 
-  padding: 0.5rem;
+  padding: 1rem;
 
   text-align: left;
 
