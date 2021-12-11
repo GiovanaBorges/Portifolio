@@ -7,6 +7,12 @@ export const NavbarWrapper = styled.ul`
   align-items: center;
   margin: 0;
   padding: 0;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+  background-color: #5f5da6;
 
   h2 {
     font-weight: 600;
@@ -25,7 +31,7 @@ export const NavbarWrapper = styled.ul`
       font-weight: 400;
 
       &:hover {
-        color: red;
+        color: black;
       }
     }
   }
