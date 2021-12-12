@@ -29,6 +29,13 @@ export const FooterInformations = styled.div`
     font-weight: 400;
     font-size: 20px;
   }
+
+  @media only screen and (max-width: 768px) {
+    h2 {
+      font-weight: 600;
+      font-size: 15px;
+    }
+  }
 `;
 
 export const Behance = styled(BehanceIcon)`

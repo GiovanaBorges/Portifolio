@@ -14,8 +14,23 @@ export const HomeWrapper = styled.section`
 
   padding: 5rem 0;
 
-  margin-top: 5rem;
+  margin-top: 4rem;
   margin-bottom: 3rem;
+
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+
+    margin-bottom: 0;
+    margin-top: 0.5rem;
+
+    align-items: center;
+
+    text-align: center;
+
+    img {
+      width: 70%;
+    }
+  }
 `;
 
 export const HomeInformation = styled.div`
@@ -27,6 +42,12 @@ export const HomeInformation = styled.div`
   text-align: left;
 
   width: 50%;
+
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+
+    width: 70%;
+  }
 `;
 
 export const HomeText = styled.ul`
@@ -50,6 +71,12 @@ export const HomeText = styled.ul`
   h3 {
     font-weight: 500;
   }
+
+  @media only screen and (max-width: 768px) {
+    text-align: center;
+
+    padding: 0;
+  }
 `;
 
 export const HomeSidenav = styled.ul`
@@ -66,6 +93,10 @@ export const HomeSidenav = styled.ul`
 
   a {
     padding: 1rem;
+  }
+
+  @media only screen and (max-width: 768px) {
+    flex-direction: row;
   }
 `;
 

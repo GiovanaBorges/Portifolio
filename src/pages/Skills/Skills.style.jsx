@@ -13,6 +13,16 @@ export const SkillContent = styled.div`
 
   display: flex;
   justify-content: center;
+
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+
+    margin-top: 0;
+
+    align-items: center;
+
+    text-align: center;
+  }
 `;
 
 export const SkillsBox = styled.div`
@@ -54,6 +64,16 @@ export const SkillsBox = styled.div`
   p {
     font-size: 25px;
     font-weight: 400;
+  }
+
+  @media only screen and (max-width: 768px) {
+    width: 70%;
+
+    margin-top: 0;
+
+    align-items: center;
+
+    text-align: center;
   }
 `;
 

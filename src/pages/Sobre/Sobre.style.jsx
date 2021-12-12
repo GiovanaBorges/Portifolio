@@ -9,6 +9,10 @@ export const SobreSection = styled.section`
   text-align: center;
 
   padding: 2rem;
+
+  @media only screen and (max-width: 768px) {
+    width: auto;
+  }
 `;
 
 export const SobreInformations = styled.div`
@@ -42,6 +46,33 @@ export const SobreInformations = styled.div`
     width: 50%;
     border-radius: 10%;
     opacity: 0.8;
+  }
+
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+    div {
+      width: auto;
+
+      li {
+        margin-bottom: 1rem;
+      }
+      h3 {
+        font-weight: 500;
+      }
+      h1 {
+        font-weight: 400;
+        font-size: 20px;
+      }
+    }
+    img {
+      width: 100%;
+      border-radius: 10%;
+    }
   }
 `;
 

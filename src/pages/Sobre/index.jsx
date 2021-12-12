@@ -18,8 +18,8 @@ function Sobre() {
           <div>
             <h3>
               Olá Seja Bem Vindo ao meu perfil, sou uma desenvolvedora java
-              fullstack e designer nas horas vagas , se quiser desevolver algo
-              ou se quiser somente trocar uma ideia estou disponível !.
+              fullstack e designer nas horas vagas , se quiser desenvolver algo
+              ou se quiser somente trocar uma ideia estou disponível !
             </h3>
 
             <li>

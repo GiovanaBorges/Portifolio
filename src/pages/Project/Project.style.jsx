@@ -13,6 +13,13 @@ export const ProjectBox = styled.div`
 
   grid-template-columns: repeat(3, 20%);
   grid-gap: 0.9rem;
+
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+    display: flex;
+
+    align-items: center;
+  }
 `;
 
 export const ProjectContent = styled.div`
@@ -49,6 +56,15 @@ export const ProjectContent = styled.div`
     p {
       border-radius: 3px;
       padding: 0.5rem;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    width: 80%;
+    height: 100%;
+
+    img {
+      max-width: 100%;
+      height: 9rem;
     }
   }
 `;
