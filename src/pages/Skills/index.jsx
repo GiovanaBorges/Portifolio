@@ -3,7 +3,7 @@ import { Skill, SkillsBox, SkillContent, CodeIcon, Back } from "./Skills.style";
 function Skills() {
   return (
     <>
-      <Skill>
+      <Skill className="Skills">
         <h1>Serviços</h1>
         <SkillContent>
           <SkillsBox>
