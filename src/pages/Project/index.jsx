@@ -5,7 +5,9 @@ function Project() {
   return (
     <>
       <WrapperProject>
-        <h1>Projetos</h1>
+        <div className="Project">
+          <h1>Projetos</h1>
+        </div>
         <ProjectBox>
           <ProjectContent>
             <div>
@@ -187,7 +189,7 @@ function Project() {
               </div>
             </div>
           </ProjectContent>
-          <ProjectContent>
+          <ProjectContent className="peido">
             <div>
               <img
                 alt="projeto"
