@@ -1,27 +1,58 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { NavbarWrapper, MenuIcon } from "./Navbar.style";
+import NavbarMobile from "../NavbarMobile";
 import ThemeSwitcher from "../ThemeSwitcher";
 import { ThemeContext } from "styled-components";
+import { Link } from "react-scroll";
 
 function Navbar({ toggleTheme, theme }) {
+  const [NavbarIsMobile, setNavbarIsMobile] = useState(false);
+
+  function ChangeNavbarMobile() {
+    setNavbarIsMobile(NavbarIsMobile ? false : true);
+  }
+
   return (
     <>
-      <NavbarWrapper>
-        <h2>Giovana</h2>
-        <h2 className="menu">
-          <MenuIcon size="25" />
-        </h2>
-        <li>
-          <h2 onClick={() => {}}>About</h2>
-          <h2>Portfolio</h2>
-          <h2>Skills</h2>
-          <h2>Projects</h2>
-          <h2>Contact</h2>
-          <h2 className="themeSwitcher">
-            <ThemeSwitcher toggleTheme={toggleTheme} theme={theme.color} />
-          </h2>
-        </li>
-      </NavbarWrapper>
+      {NavbarIsMobile ? (
+        <>
+          <NavbarMobile
+            toggleTheme={toggleTheme}
+            theme={theme}
+            mobile={ChangeNavbarMobile}
+          />
+        </>
+      ) : (
+        <>
+          <NavbarWrapper mobile={ChangeNavbarMobile}>
+            <Link to="Home">
+              <h2>Giovana</h2>
+            </Link>
+            <h2 className="menu">
+              <MenuIcon
+                size="25"
+                onClick={() => {
+                  ChangeNavbarMobile();
+                }}
+              />
+            </h2>
+            <li>
+              <Link to="Sobre">
+                <h2>Sobre</h2>
+              </Link>
+              <Link to="Skills">
+                <h2>Serviços</h2>
+              </Link>
+              <Link to="Project">
+                <h2>Projetos</h2>
+              </Link>
+              <h2 className="themeSwitcher">
+                <ThemeSwitcher toggleTheme={toggleTheme} theme={theme} />
+              </h2>
+            </li>
+          </NavbarWrapper>
+        </>
+      )}
     </>
   );
 }

@@ -5,14 +5,13 @@ import {
   Email,
   SobreSection,
 } from "./Sobre.style";
-
 import { Button } from "../../components/Button";
 import { Link } from "../../components/Button/Button.style";
 
 function Sobre() {
   return (
     <>
-      <SobreSection>
+      <SobreSection className="Sobre">
         <h1>Sobre Giovana</h1>
         <SobreInformations>
           <div>

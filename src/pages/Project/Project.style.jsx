@@ -3,8 +3,7 @@ import styled from "styled-components";
 export const WrapperProject = styled.section`
   width: 100%;
   text-align: center;
-
-  margin: 4rem 0;
+  padding: 3rem 0;
 `;
 
 export const ProjectBox = styled.div`

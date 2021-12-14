@@ -12,10 +12,9 @@ export const HomeWrapper = styled.section`
 
   align-items: center;
 
-  padding: 5rem 0;
+  padding-top: 7rem;
 
-  margin-top: 4rem;
-  margin-bottom: 3rem;
+  margin-bottom: 9rem;
 
   @media only screen and (max-width: 768px) {
     flex-direction: column;
