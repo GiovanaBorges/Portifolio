@@ -3,8 +3,11 @@ import { Menu } from "@styled-icons/boxicons-regular/Menu";
 
 export const NavbarWrapper = styled.ul`
   display: flex;
-  justify-content: space-around;
 
+  height: 5rem;
+
+  justify-content: space-around;
+  
   align-items: center;
   margin: 0;
   padding: 0;
@@ -12,7 +15,7 @@ export const NavbarWrapper = styled.ul`
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 99;
+  z-index: 5;
   background-color: #5f5da6;
 
   h2 {
@@ -23,12 +26,18 @@ export const NavbarWrapper = styled.ul`
     display:none;
   }
 
+  div{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
   li {
     display: flex;
     justify-content: space-evenly;
 
     width: 40%;
-    color: ${(props) => props.color}
+    color: ${(props) => props.color};
 
     h2 {
       padding: 0.3rem;
@@ -57,7 +66,7 @@ export const NavbarWrapper = styled.ul`
   }
 
   h2{
-    display: none;
+    display : none;
   }
   }
 
