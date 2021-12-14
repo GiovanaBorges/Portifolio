@@ -16,7 +16,7 @@ import { Button } from "../../components/Button";
 function Layout() {
   return (
     <>
-      <HomeWrapper>
+      <HomeWrapper className="Home">
         <HomeInformation>
           <HomeSidenav>
             <a
@@ -55,9 +55,6 @@ function Layout() {
           <img src={"giovana_preview.png"} alt="image of Giovana Borges" />
         </div>
       </HomeWrapper>
-      <Sobre />
-      <Skills />
-      <Project />
     </>
   );
 }
