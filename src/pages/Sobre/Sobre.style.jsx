@@ -8,7 +8,7 @@ export const SobreSection = styled.section`
 
   text-align: center;
 
-  padding: 2rem;
+  margin-top: 3rem;
 
   @media only screen and (max-width: 768px) {
     width: auto;
