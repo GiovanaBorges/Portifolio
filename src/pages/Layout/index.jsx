@@ -47,7 +47,13 @@ function Layout() {
               <h1>Giovana Borges</h1>
               <h2>Fullstack java </h2>
               <h3>Quer desenvolver algo comigo ou conversar ?</h3>
-              <Button text={"Contato"} />
+              <a
+                href="https://api.whatsapp.com/send?phone=5511991846381&text=oi , eu vim pelo seu site"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Button text={"Contato"} />
+              </a>
             </li>
           </HomeText>
         </HomeInformation>
