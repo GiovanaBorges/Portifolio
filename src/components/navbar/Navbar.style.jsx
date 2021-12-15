@@ -20,6 +20,10 @@ export const NavbarWrapper = styled.ul`
 
   h2 {
     font-weight: 600;
+
+    &:hover{
+      cursor: pointer;
+    }
   }
 
    h2.menu{
