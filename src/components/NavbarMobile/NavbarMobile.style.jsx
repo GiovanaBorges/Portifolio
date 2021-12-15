@@ -42,6 +42,13 @@ export const NavbarMobileWrapper = styled.div`
 
     padding: 1rem;
   }
+
+  h2 {
+    &:hover {
+      color: ${(props) => (props.theme.title == "light" ? "white" : "black")};
+      cursor: pointer;
+    }
+  }
 `;
 
 export const Close = styled(CloseOutline)`
