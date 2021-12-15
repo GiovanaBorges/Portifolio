@@ -18,6 +18,8 @@ export const Btn = styled.button`
 
   &:hover {
     opacity: 1;
+    color: ${(props) => (props.theme.title == "light" ? "white" : "black")};
+    cursor: pointer;
   }
 
   @media only screen and (max-width: 768px) {
