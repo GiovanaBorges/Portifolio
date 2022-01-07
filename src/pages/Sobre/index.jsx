@@ -5,20 +5,18 @@ import {
   Email,
   SobreSection,
 } from "./Sobre.style";
-import { Button } from "../../components/Button";
+
 import { Link } from "../../components/Button/Button.style";
 
 function Sobre() {
   return (
     <>
       <SobreSection className="Sobre">
-        <h1>Sobre Giovana</h1>
+        <h1>About Giovana</h1>
         <SobreInformations>
           <div>
             <h3>
-              Olá Seja Bem Vindo ao meu perfil, sou uma desenvolvedora java
-              fullstack e designer nas horas vagas , se quiser desenvolver algo
-              ou se quiser somente trocar uma ideia estou disponível !
+            Hello, Welcome to my profile, I'm a fullstack java developer and designer in my spare time, if you want to develop something or just want to exchange an idea, I'm available!
             </h3>
 
             <li>
@@ -43,7 +41,7 @@ function Sobre() {
             </li>
           </div>
           <img
-            src="https://miro.medium.com/max/1838/1*9S3JhMtLGiacpNpziWGN1A.gif"
+            src="https://d6f6d0kpz0gyr.cloudfront.net/uploads/images-archive/Blog/Gifs/coding.gif"
             alt="coding"
           />
         </SobreInformations>
