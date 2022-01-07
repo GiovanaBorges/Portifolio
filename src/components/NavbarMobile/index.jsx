@@ -21,13 +21,13 @@ function NavbarMobile({ toggleTheme, theme, mobile }) {
           </Link>
 
           <Link to="Sobre">
-            <h2>Sobre</h2>
+            <h2>About</h2>
           </Link>
           <Link to="Skills">
-            <h2>Serviços</h2>
+            <h2>Services</h2>
           </Link>
           <Link to="Project">
-            <h2>Projetos</h2>
+            <h2>Projects</h2>
           </Link>
         </li>
       </NavbarMobileWrapper>
