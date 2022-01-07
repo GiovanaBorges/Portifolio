@@ -8,9 +8,6 @@ import {
   BehanceIcon,
 } from "./Layout.style";
 
-import Sobre from "../Sobre";
-import Skills from "../Skills";
-import Project from "../Project";
 import { Button } from "../../components/Button";
 
 function Layout() {
@@ -43,22 +40,22 @@ function Layout() {
           </HomeSidenav>
           <HomeText>
             <li>
-              <h2>Oi , eu sou</h2>
+              <h2>Hi , i am</h2>
               <h1>Giovana Borges</h1>
               <h2>Fullstack java </h2>
-              <h3>Quer desenvolver algo comigo ou conversar ?</h3>
+              <h3>Do you want to develop something with me?</h3>
               <a
                 href="https://api.whatsapp.com/send?phone=5511991846381&text=oi , eu vim pelo seu site"
                 target="_blank"
                 rel="noreferrer"
               >
-                <Button text={"Contato"} />
+                <Button text={"Contact"} />
               </a>
             </li>
           </HomeText>
         </HomeInformation>
         <div>
-          <img src={"giovana_preview.png"} alt="image of Giovana Borges" />
+          <img src={"me.png"} alt="image of Giovana Borges" />
         </div>
       </HomeWrapper>
     </>

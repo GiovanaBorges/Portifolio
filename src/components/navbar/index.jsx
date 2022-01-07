@@ -1,8 +1,7 @@
-import React, { useContext, useState } from "react";
+import React, {useState } from "react";
 import { NavbarWrapper, MenuIcon } from "./Navbar.style";
 import NavbarMobile from "../NavbarMobile";
 import ThemeSwitcher from "../ThemeSwitcher";
-import { ThemeContext } from "styled-components";
 import { Link } from "react-scroll";
 
 function Navbar({ toggleTheme, theme }) {
@@ -38,13 +37,13 @@ function Navbar({ toggleTheme, theme }) {
             </h2>
             <li>
               <Link to="Sobre">
-                <h2>Sobre</h2>
+                <h2>About</h2>
               </Link>
               <Link to="Skills">
-                <h2>Serviços</h2>
+                <h2>Services</h2>
               </Link>
               <Link to="Project">
-                <h2>Projetos</h2>
+                <h2>Projects</h2>
               </Link>
               <h2 className="themeSwitcher">
                 <ThemeSwitcher toggleTheme={toggleTheme} theme={theme} />

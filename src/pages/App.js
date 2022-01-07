@@ -8,7 +8,7 @@ import Skills from "../pages/Skills";
 import { Wrapper } from "./App.style";
 
 import { ThemeProvider } from "styled-components";
-import NavbarMobile from "../components/NavbarMobile";
+
 
 import light from "../styles/themes/light";
 import dark from "../styles/themes/dark";

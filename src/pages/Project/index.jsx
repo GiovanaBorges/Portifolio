@@ -6,7 +6,7 @@ function Project() {
     <>
       <WrapperProject>
         <div className="Project">
-          <h1>Projetos</h1>
+          <h1>Projects</h1>
         </div>
         <ProjectBox>
           <ProjectContent>
@@ -14,7 +14,7 @@ function Project() {
               <img alt="projeto" src="https://j.gifs.com/79nNDy.gif" />
               <div className="text">
                 <h1>
-                  Calculadora
+                  Calculator
                   <a
                     href="https://github.com/GiovanaBorges/Learning-reactJS/tree/main/calc"
                     target="_blank"

@@ -35,7 +35,7 @@ function Footer() {
               <Behance size="25" />
             </a>
           </div>
-          <h2>&#169; Todos os direitos reservados, Giovana Borges</h2>
+          <h2>&#169; All rights reserved, Giovana Borges</h2>
         </FooterInformations>
       </FooterWrapper>
     </>
