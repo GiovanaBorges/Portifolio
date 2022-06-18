@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { ButtonNight, ButtonSun } from "./ThemeSwitcher.style";
 
 function ThemeSwitcher({ toggleTheme, theme }) {

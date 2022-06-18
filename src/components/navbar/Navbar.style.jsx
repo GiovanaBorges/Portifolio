@@ -51,7 +51,8 @@ export const NavbarWrapper = styled.ul`
       font-weight: 400;
 
       &:hover {
-        color: ${(props) => (props.theme.title == "light" ? "white" : "black")};
+        color: ${(props) =>
+          props.theme.title === "light" ? "white" : "black"};
         cursor: pointer;
       }
     }
@@ -84,7 +85,8 @@ export const MenuIcon = styled(Menu)`
       font-weight: 400;
 
       &:hover {
-        color: ${(props) => (props.theme.title == "light" ? "white" : "black")};
+        color: ${(props) =>
+          props.theme.title === "light" ? "white" : "black"};
         cursor: pointer;
       }
 `;

@@ -45,7 +45,7 @@ export const NavbarMobileWrapper = styled.div`
 
   h2 {
     &:hover {
-      color: ${(props) => (props.theme.title == "light" ? "white" : "black")};
+      color: ${(props) => (props.theme.title === "light" ? "white" : "black")};
       cursor: pointer;
     }
   }

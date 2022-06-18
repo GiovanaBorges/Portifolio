@@ -9,7 +9,6 @@ import { Wrapper } from "./App.style";
 
 import { ThemeProvider } from "styled-components";
 
-
 import light from "../styles/themes/light";
 import dark from "../styles/themes/dark";
 
@@ -18,7 +17,7 @@ function App() {
   /*#D9D9D9*/
 
   const toggleTheme = () => {
-    setTheme(theme.title == "light" ? dark : light);
+    setTheme(theme.title === "light" ? dark : light);
   };
 
   return (

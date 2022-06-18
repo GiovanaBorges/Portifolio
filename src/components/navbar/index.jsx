@@ -1,4 +1,4 @@
-import React, {useState } from "react";
+import React, { useState } from "react";
 import { NavbarWrapper, MenuIcon } from "./Navbar.style";
 import NavbarMobile from "../NavbarMobile";
 import ThemeSwitcher from "../ThemeSwitcher";
