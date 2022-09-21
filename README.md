@@ -12,7 +12,7 @@ This is my portifolio
 - [styled-components](https://styled-components.com)
 
 ### Available here
-[Link](https://giovanaportifolio.herokuapp.com)
+[Link](https://giovanaborges.netlify.app)
 
 Made with ❤ 
 By @GiovanaBorges.
