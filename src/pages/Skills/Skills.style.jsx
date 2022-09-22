@@ -1,91 +1,87 @@
 import styled from "styled-components";
-import { CodeSlash } from "@styled-icons/bootstrap/CodeSlash";
-import { Server } from "@styled-icons/boxicons-regular/Server";
+import {ReactLogo} from "@styled-icons/boxicons-logos/ReactLogo"
+import {Node} from "@styled-icons/fa-brands/Node"
+import {Mongodb} from "@styled-icons/simple-icons/Mongodb"
+import {Styledcomponents} from "@styled-icons/simple-icons/Styledcomponents"
+import {Redis} from "@styled-icons/simple-icons/Redis"
+import {Mysql} from "@styled-icons/simple-icons/Mysql"
+import {Prisma} from "@styled-icons/simple-icons/Prisma"
+import {Typescript} from "@styled-icons/simple-icons/Typescript"
+import {Docker} from "@styled-icons/boxicons-logos/Docker"
 
-export const Skill = styled.section`
-  min-height: 100vh;
+export const SkillsSection = styled.section`
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+  
+    z-index: 100;
+    align-items: center;
 
-  display: flex;
-  justify-content: space-around;
-  z-index: 100;
+    h1{
+        font-size:5rem;
+        font-weight:200;
+    }
 
-  align-items: center;
+    @media only screen and (max-width: 768px) {
+        width: auto;
+    }
 `;
 
 export const SkillContent = styled.div`
-  align-items: center;
-  text-align: center;
+    margin:6rem;
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px;
+    width:70%:
+`
 
-  display: flex;
-  justify-content: center;
+export const SkillBox = styled.div`
+  padding:0.5rem;
+  transition:0.5s;
+  border:2px solid  #303030;
 
-  @media only screen and (max-width: 768px) {
-    flex-direction: column;
+  display:flex;
+  align-items:center;
+  justify-content:center;
 
-    margin-top: 0;
-
-    align-items: center;
-
-    text-align: center;
+  &:hover{
+    border: 2px solid #5f5da6;
   }
+
 `;
 
-export const SkillsBox = styled.div`
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-
-  list-style-type: none;
-
-  width: 15%;
-  height: 15%;
-
-  margin: 1rem 0.5rem;
-
-  word-wrap: break-word;
-
-  div {
-    padding: 0.5rem;
-    height: 100%;
-    transition: 0.5s;
-    border-bottom: 4px #5f5da6 solid;
-
-    -webkit-box-shadow: 0px 10px 13px -7px #000000,
-      4px 1px 38px 4px rgba(217, 217, 217, 0);
-    box-shadow: 0px 10px 13px -7px #000000,
-      4px 1px 38px 4px rgba(217, 217, 217, 0);
-
-    a {
-      text-decoration: none;
-      font-size: 25px;
-      color: #5f5da6;
-    }
-  }
-  div > div {
-    margin: 0.5rem auto;
-    transition: 0.5s;
-  }
-
-  p {
-    font-size: 25px;
-    font-weight: 400;
-  }
-
-  @media only screen and (max-width: 768px) {
-    width: 70%;
-
-    margin-top: 0;
-
-    align-items: center;
-
-    text-align: center;
-  }
-`;
-
-export const CodeIcon = styled(CodeSlash)`
+export const React = styled(ReactLogo)`
   color: #5f5da6;
 `;
 
-export const Back = styled(Server)`
-  color: #5f5da6;
+export const NodeIcon = styled(Node)`
+    color: #5f5da6;
 `;
+
+export const MongodbIcon = styled(Mongodb)`
+    color: #5f5da6;
+`
+
+export const StyledIcon = styled(Styledcomponents)`
+    color: #5f5da6;
+`
+
+export const RedisIcon = styled(Redis)`
+    color: #5f5da6;
+`
+
+export const MysqlIcon = styled(Mysql)`
+    color: #5f5da6;
+`
+
+export const PrismaIcon = styled(Prisma)`
+    color: #5f5da6;
+`;
+
+export const TypescriptIcon = styled(Typescript)`
+    color: #5f5da6;
+`
+
+export const DockerIcon = styled(Docker)`
+    color: #5f5da6;
+`
