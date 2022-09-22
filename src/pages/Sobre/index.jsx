@@ -14,7 +14,7 @@ function Sobre() {
       <SobreSection className="Sobre">
         <SobreInformations>
         
-          <div>
+        <div>
           <h1>Who i am?</h1>
             <h3>
             Hello, Welcome to my profile, I'm a fullstack Developer and addicted to <span>Blade runner.</span>
@@ -43,6 +43,7 @@ function Sobre() {
           <img
             src={"blade-runner-cover.jpg"} alt="coding" 
           />
+          
         </SobreInformations>
       </SobreSection>
     </>
