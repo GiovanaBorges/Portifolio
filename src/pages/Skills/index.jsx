@@ -11,7 +11,7 @@ import {
     PrismaIcon,
     TypescriptIcon,
     DockerIcon
-} from "./skills.style"
+} from "./Skills.style"
 
 import {useState} from "react"
 
