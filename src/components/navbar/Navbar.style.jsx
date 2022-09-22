@@ -47,6 +47,8 @@ export const NavbarWrapper = styled.ul`
     justify-content: space-evenly;
     align-items: center;
 
+    text-decoration:none;
+
     width: 40%;
     color: ${(props) => props.theme.title === "light" ? "black" : "white"};
 
