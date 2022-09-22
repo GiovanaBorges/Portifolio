@@ -1,47 +1,59 @@
-import { Skill, SkillsBox, SkillContent, CodeIcon, Back } from "./Skills.style";
+import {
+    SkillsSection,
+    SkillBox,
+    SkillContent,
+    React,
+    NodeIcon,
+    MongodbIcon,
+    StyledIcon,
+    RedisIcon,
+    MysqlIcon,
+    PrismaIcon,
+    TypescriptIcon,
+    DockerIcon
+} from "./skills.style"
 
-function Skills() {
-  return (
-    <>
-      <Skill className="Skills">
-        <h1>Serviços</h1>
-        <SkillContent>
-          <SkillsBox>
-            <div>
-              <li>
-                <CodeIcon size="35" />
-              </li>
-              <p>Frontend Development</p>
-              
-              <a
-                href="https://kenzie.com.br/blog/front-end/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                View more
-              </a>
-            </div>
-          </SkillsBox>
-          <SkillsBox>
-            <div>
-              <li>
-                <Back size="35" />
-              </li>
-              <p>Backend Development</p>
-              
-              <a  
-                href="https://kenzie.com.br/blog/back-end/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                View more
-              </a>
-            </div>
-          </SkillsBox>
-        </SkillContent>
-      </Skill>
-    </>
-  );
-}
+  function Skills() {
+    return (
+      <>
+      <SkillsSection>
+        <div>
+            <h1>Knowledge</h1>
+            <h3>*mouse cursor over card to read*</h3>
+        </div>
 
-export default Skills;
+        <div>
+            <SkillContent>
+                <SkillBox>
+                    <React size="50"/>
+                </SkillBox>
+                <SkillBox>
+                    <NodeIcon size="50"/>
+                </SkillBox>
+                 <SkillBox>
+                    <MongodbIcon size="50"/>
+                </SkillBox>
+                <SkillBox>
+                    <StyledIcon size="50"/>
+                </SkillBox>
+                <SkillBox>
+                    <RedisIcon size="70"/>
+                </SkillBox>
+                <SkillBox>
+                    <PrismaIcon size="50"/>
+                </SkillBox>
+                <SkillBox>
+                    <DockerIcon size="70"/>
+                </SkillBox>
+                <SkillBox>
+                    <TypescriptIcon size="50"/>
+                </SkillBox>
+            </SkillContent>
+        </div>
+      </SkillsSection>
+      </>
+    );
+  }
+  
+  export default Skills;
+  
