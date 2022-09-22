@@ -12,6 +12,11 @@ export const HomeWrapper = styled.section`
 
   align-items: center;
 
+  img {
+    width: 70%;
+    border-radius:50%;
+  }
+
   @media only screen and (max-width: 768px) {
     flex-direction: column;
 
@@ -56,7 +61,7 @@ export const HomeText = styled.ul`
 
   h1 {
     font-size: 35px;
-    font-weight: 600;
+    font-weight: 700;
   }
 
   h2 {
@@ -64,7 +69,7 @@ export const HomeText = styled.ul`
   }
 
   h3 {
-    font-weight: 500;
+    font-weight: 300;
   }
 
   @media only screen and (max-width: 768px) {
@@ -84,8 +89,6 @@ export const HomeSidenav = styled.ul`
 
   justify-content: center;
 
-  margin: 0 0.5rem;
-
   a {
     padding: 1rem;
   }
@@ -97,27 +100,27 @@ export const HomeSidenav = styled.ul`
 
 export const Git = styled(Github)`
   transition: 0.5s;
-  color: #5f5da6;
+  color: #7d7cae;
 
   &:hover {
-    color: black;
+    color: white;
   }
 `;
 
 export const LinkedinIcon = styled(Linkedin)`
   transition: 0.5s;
-  color: #5f5da6;
+  color: #7d7cae;
 
   &:hover {
-    color: black;
+    color: white;
   }
 `;
 
 export const BehanceIcon = styled(Behance)`
   transition: 0.5s;
-  color: #5f5da6;
+  color: #7d7cae;
 
   &:hover {
-    color: black;
+    color: white;
   }
 `;
