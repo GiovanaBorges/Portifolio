@@ -12,7 +12,7 @@ function Sobre() {
   return (
     <>
       <SobreSection className="Sobre">
-        <h1>About Giovana</h1>
+        
         <SobreInformations>
           <div>
             <h3>
