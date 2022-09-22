@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { NavbarWrapper, MenuIcon } from "./Navbar.style";
 import NavbarMobile from "../NavbarMobile";
 import ThemeSwitcher from "../ThemeSwitcher";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 
 function Navbar({ toggleTheme, theme }) {
   const [NavbarIsMobile, setNavbarIsMobile] = useState(false);
@@ -24,7 +24,7 @@ function Navbar({ toggleTheme, theme }) {
       ) : (
         <>
           <NavbarWrapper mobile={ChangeNavbarMobile}>
-            <Link to="Home">
+            <Link to="/">
               <h2>Giovana</h2>
             </Link>
             <h2 className="menu">
@@ -36,13 +36,13 @@ function Navbar({ toggleTheme, theme }) {
               />
             </h2>
             <li>
-              <Link to="Sobre">
+              <Link to="/sobre">
                 <h2>About</h2>
               </Link>
-              <Link to="Skills">
+              <Link to="/skill">
                 <h2>Services</h2>
               </Link>
-              <Link to="Project">
+              <Link to="/project">
                 <h2>Projects</h2>
               </Link>
               <h2 className="themeSwitcher">
