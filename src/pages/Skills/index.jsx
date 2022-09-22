@@ -4,7 +4,7 @@ function Skills() {
   return (
     <>
       <Skill className="Skills">
-        <h1>Serviços</h1>
+        <h1>Conhecimentos</h1>
         <SkillContent>
           <SkillsBox>
             <div>

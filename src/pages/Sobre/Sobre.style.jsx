@@ -46,7 +46,7 @@ export const SobreInformations = styled.div`
   }
   img {
     width: 50%;
-    border-radius: 10%;
+    border-radius: 20%;
     opacity: 0.8;
   }
 
