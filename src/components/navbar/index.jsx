@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import { NavbarWrapper, MenuIcon } from "./Navbar.style";
+import { NavbarWrapper, MenuIcon,LinkBtn } from "./Navbar.style";
 import NavbarMobile from "../NavbarMobile";
 import ThemeSwitcher from "../ThemeSwitcher";
-import { Link } from "react-router-dom";
 
 function Navbar({ toggleTheme, theme }) {
   const [NavbarIsMobile, setNavbarIsMobile] = useState(false);
@@ -24,9 +23,9 @@ function Navbar({ toggleTheme, theme }) {
       ) : (
         <>
           <NavbarWrapper mobile={ChangeNavbarMobile}>
-            <Link to="/" style={{ textDecoration: 'none' }}>
+            <LinkBtn to="/" activeClassName="current" exact style={{ textDecoration: 'none' }}>
               <h2>Giovana</h2>
-            </Link>
+            </LinkBtn>
             <h2 className="menu">
               <MenuIcon
                 size="25"
@@ -36,18 +35,18 @@ function Navbar({ toggleTheme, theme }) {
               />
             </h2>
             <li>
-              <Link to="/sobre" style={{ textDecoration: 'none' }}>
+              <LinkBtn to="/sobre" exact activeClassName="current" style={{ textDecoration: 'none' }}>
                 <h2>About</h2>
-              </Link>
-              <Link to="/services" style={{ textDecoration: 'none' }}>
+              </LinkBtn>
+              <LinkBtn to="/services" exact activeClassName="current" style={{ textDecoration: 'none' }}>
                 <h2>Services</h2>
-              </Link>
-              <Link to="/skills" style={{ textDecoration: 'none' }}>
+              </LinkBtn>
+              <LinkBtn to="/skills" exact activeClassName="current"  style={{ textDecoration: 'none' }}>
                 <h2>Skills</h2>
-              </Link>
-              <Link to="/project" style={{ textDecoration: 'none' }}>
+              </LinkBtn>
+              <LinkBtn to="/projects" exact activeClassName="current" style={{ textDecoration: 'none' }}>
                 <h2>Projects</h2>
-              </Link>
+              </LinkBtn>
               <h2 className="themeSwitcher">
                 <ThemeSwitcher toggleTheme={toggleTheme} theme={theme} />
               </h2>
