@@ -1,9 +1,13 @@
 import styled from "styled-components";
 
 export const WrapperProject = styled.section`
-  width: 100%;
-  text-align: center;
-  padding: 3rem 0;
+   min-height: 100vh;
+
+  display: flex;
+  justify-content: space-around;
+  z-index: 100;
+
+  align-items: center;
 `;
 
 export const ProjectBox = styled.div`
