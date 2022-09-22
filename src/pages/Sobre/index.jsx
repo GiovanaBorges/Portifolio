@@ -12,37 +12,36 @@ function Sobre() {
   return (
     <>
       <SobreSection className="Sobre">
-        
         <SobreInformations>
+        
           <div>
+          <h1>Who i am?</h1>
             <h3>
-            Hello, Welcome to my profile, I'm a fullstack java developer and designer in my spare time, if you want to develop something or just want to exchange an idea, I'm available!
+            Hello, Welcome to my profile, I'm a fullstack Developer and addicted to <span>Blade runner.</span>
             </h3>
+            <h3>if you want to develop something or just want to exchange an idea, I'm available!</h3>
 
+          <ul>
             <li>
               <h1>
                 <People size="25" /> Giovana Borges
               </h1>
-            </li>
-            <li>
-              <h1>
-                <ZapIcone size="25" /> (11) 99184-6381
-              </h1>
-            </li>
-            <li>
+              </li>
+              <li>
               <h1>
                 <Email size="25" /> gigi12345as17@gmail.com
               </h1>
-            </li>
-            <li>
-              <Link href="/curriculum-fullstackJava.pdf" download>
+              </li>
+              <li>
+               <Link href="/curriculum-fullstackJava.pdf" download>
                 Download CV
               </Link>
-            </li>
-          </div>
+              </li>
+            </ul>
+            </div>
+        
           <img
-            src="https://d6f6d0kpz0gyr.cloudfront.net/uploads/images-archive/Blog/Gifs/coding.gif"
-            alt="coding"
+            src={"blade-runner-cover.jpg"} alt="coding" 
           />
         </SobreInformations>
       </SobreSection>
