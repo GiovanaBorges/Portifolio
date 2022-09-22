@@ -7,15 +7,15 @@ import {
   LinkedinIcon,
   BehanceIcon,
 } from "./Layout.style";
-import Navbar from "../components/navbar";
-import Footer from "../components/footer";
+import Navbar from "../../components/navbar";
+import Footer from "../../components/footer";
 
 import { Button } from "../../components/Button";
 
 function Layout() {
   return (
     <>
-    <Navbar/>
+    
       <HomeWrapper className="Home">
         <HomeInformation>
           <HomeSidenav>
@@ -61,7 +61,7 @@ function Layout() {
           <img src={"me.png"} alt="image of Giovana Borges" />
         </div>
       </HomeWrapper>
-      <Footer/>
+      
     </>
   );
 }
