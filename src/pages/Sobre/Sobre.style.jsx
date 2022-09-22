@@ -28,28 +28,55 @@ export const SobreInformations = styled.div`
   justify-content: space-around;
 
   width: 70%;
-  list-style-type: none;
+  font-weight:200;
+
+  img {
+    width: 50%;
+    height:70vh;
+    border-radius: 5%;
+    opacity: 0.6;
+    transition:0.5s;
+
+    &:hover{
+      opacity: 1;
+    }
+    
+  }  
 
   div {
-    width: 60%;
-
     text-align: left;
-    padding: 0 0.5rem;
+    
 
     h3 {
-      font-weight: 500;
+      font-weight: 200;
+      font-size:1.5rem;
+
+      span{
+        font-weight:300;
+        color: #ef85b5;
+        font-size:1.8rem;
+      }
     }
     h1 {
       font-weight: 400;
       font-size: 20px;
     }
-  }
-  img {
-    width: 50%;
-    border-radius: 10%;
-    opacity: 0.8;
-  }
 
+    ul {
+      text-decoration:none;
+      font-style: none;
+      
+      li{
+        list-style-type: none;
+        margin:2rem 0;
+        
+        h2{
+          font-weight:200;
+        }
+      }
+    }
+  }
+ 
   @media only screen and (max-width: 768px) {
     flex-direction: column;
     justify-content: space-around;
@@ -62,6 +89,8 @@ export const SobreInformations = styled.div`
 
       li {
         margin-bottom: 1rem;
+        text-decoration:none;
+        font-style: none;
       }
       h3 {
         font-weight: 500;
@@ -79,13 +108,13 @@ export const SobreInformations = styled.div`
 `;
 
 export const ZapIcone = styled(Whatsapp)`
-  color: #5f5da6;
+  color: #4a268d;
 `;
 
 export const People = styled(UserOutline)`
-  color: #5f5da6;
+color: #4a268d;
 `;
 
 export const Email = styled(Mail)`
-  color: #5f5da6;
+color: #4a268d;
 `;
