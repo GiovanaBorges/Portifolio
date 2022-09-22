@@ -4,17 +4,13 @@ import { Linkedin } from "@styled-icons/boxicons-logos/Linkedin";
 import { Behance } from "@styled-icons/boxicons-logos/Behance";
 
 export const HomeWrapper = styled.section`
-  height: auto;
+  min-height: 100vh;
 
   display: flex;
   justify-content: space-around;
   z-index: 100;
 
   align-items: center;
-
-  padding-top: 7rem;
-
-  margin-bottom: 9rem;
 
   @media only screen and (max-width: 768px) {
     flex-direction: column;
