@@ -3,15 +3,13 @@ import { CodeSlash } from "@styled-icons/bootstrap/CodeSlash";
 import { Server } from "@styled-icons/boxicons-regular/Server";
 
 export const Skill = styled.section`
-  padding: 2rem;
+  min-height: 100vh;
 
-  margin: 0.5rem 2rem;
-
-  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  z-index: 100;
 
   align-items: center;
-
-  height: auto;
 `;
 
 export const SkillContent = styled.div`
