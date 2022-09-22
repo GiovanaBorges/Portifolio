@@ -4,7 +4,7 @@ import { Menu } from "@styled-icons/boxicons-regular/Menu";
 export const NavbarWrapper = styled.ul`
   display: flex;
 
-  height: 5rem;
+  height: 6rem;
 
   justify-content: space-around;
   
@@ -16,13 +16,19 @@ export const NavbarWrapper = styled.ul`
   width: 100%;
   top: 0;
   z-index: 5;
-  background-color: #5f5da6;
+
+  text-decoration: none;
+  
 
   h2 {
-    font-weight: 600;
+    font-weight: 400;
+    color: ${(props) => props.theme.title === "light" ? "black" : "white"};
 
     &:hover{
-      cursor: pointer;
+        color: ${(props) =>
+          props.theme.title === "light" ? "#5f5da6" : "#5f5da6"};
+        cursor: pointer;
+    
     }
   }
 
@@ -39,20 +45,22 @@ export const NavbarWrapper = styled.ul`
   li {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 
     width: 40%;
-    color: ${(props) => props.color};
+    color: ${(props) => props.theme.title === "light" ? "black" : "white"};
 
     h2 {
       padding: 0.3rem;
       transition: 0.3s;
 
-      color: ${(props) => props.color}
-      font-weight: 400;
+      color: ${(props) => props.theme.title === "light" ? "black" : "white"};
+      font-weight: 100;
+      font-size:1.5rem;
 
       &:hover {
         color: ${(props) =>
-          props.theme.title === "light" ? "white" : "black"};
+          props.theme.title === "light" ? "#5f5da6" : "#5f5da6"};
         cursor: pointer;
       }
     }
@@ -81,8 +89,8 @@ export const MenuIcon = styled(Menu)`
       padding: 0.3rem;
       transition: 0.3s;
 
-      color: ${(props) => props.color}
-      font-weight: 400;
+      color: ${(props) => props.color};
+      font-weight: 300;
 
       &:hover {
         color: ${(props) =>
