@@ -1,73 +1,122 @@
 import styled from "styled-components";
+import { CodeSlash } from "@styled-icons/bootstrap/CodeSlash";
+import { Server } from "@styled-icons/boxicons-regular/Server";
+import {DesignServices} from "@styled-icons/material/DesignServices"
 
-export const WrapperProject = styled.section`
-   min-height: 100vh;
+export const ProjectMain = styled.section`
+  min-height: 100vh;
 
   display: flex;
-  justify-content: space-around;
+  flex-direction:column;
+  justify-content: center;
   z-index: 100;
 
   align-items: center;
-`;
 
-export const ProjectBox = styled.div`
-  display: grid;
-  justify-content: center;
-
-  grid-template-columns: repeat(3, 20%);
-  grid-gap: 0.9rem;
-
-  @media only screen and (max-width: 768px) {
-    flex-direction: column;
-    display: flex;
-
-    align-items: center;
+  h1{
+    font-size:4rem;
   }
 `;
 
 export const ProjectContent = styled.div`
-  width: 100%;
-  height: 100%;
+  align-items: center;
+  text-align: center;
 
-  img {
-    max-width: 100%;
-    height: 9rem;
-  }
+  display: flex;
+  justify-content: center;
 
-  div.text {
-    text-align: left;
-
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-
-    h1 {
-      font-weight: 400;
-      font-size: 20px;
-    }
-  }
-
-  div.techs {
-    display: flex;
-
-    border-bottom: 3px solid #5f5da6;
-    border-left: 3px solid #5f5da6;
-    border-right: 3px solid #5f5da6;
-
-    justify-content: space-around;
-
-    p {
-      border-radius: 3px;
-      padding: 0.5rem;
-    }
-  }
   @media only screen and (max-width: 768px) {
-    width: 80%;
-    height: 100%;
+    flex-direction: column;
 
-    img {
-      max-width: 100%;
-      height: 9rem;
+    margin-top: 0;
+
+    align-items: center;
+
+    text-align: center;
+  }
+`;
+
+export const ProjectBox = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  list-style-type: none;
+  text-align:left;
+  
+  width: 20%;
+  margin: 1rem 0.5rem;
+
+  border:2px solid #303030;
+
+  transition:0.5s;
+
+  div {
+    
+    padding:1.5rem;
+  
+    
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:right;
+
+    min-height: 35vh;
+    transition: 0.5s;
+
+    -webkit-box-shadow: 0px 10px 13px -7px #000000,
+      4px 1px 38px 4px rgba(217, 217, 217, 0);
+    box-shadow: 0px 10px 13px -7px #000000,
+      4px 1px 38px 4px rgba(217, 217, 217, 0);
+
+    a {
+      text-decoration: none;
+      font-size: 25px;
+      color: #5f5da6;
     }
   }
+  
+  div > div {
+    margin: 0.5rem auto;
+    transition: 0.5s;
+  }
+
+  p {
+    font-size: 25px;
+    font-weight: 400;
+  }
+
+  h3{
+    font-weight:300;
+  }
+
+  &:hover{
+    border:2px solid #5f5da6;
+    box-shadow:none;
+    -webkit-box-shadow:none;
+
+    -webkit-box-shadow: 0px 10px 13px -7px #000000,
+      4px 1px 38px 4px #000000;
+    box-shadow: 0px 10px 13px -7px #5f5da6,
+      4px 1px 38px 4px #000000 ;
+  }
+
+  @media only screen and (max-width: 768px) {
+    width: 70%;
+
+    align-items: center;
+
+    text-align: center;
+  }
+`;
+
+export const CodeIcon = styled(CodeSlash)`
+  color: #5f5da6;
+`;
+
+export const Back = styled(Server)`
+  color: #5f5da6;
+`;
+
+export const DesignIcon = styled(DesignServices)`
+  color: #5f5da6;
 `;
