@@ -7,8 +7,7 @@ import {
   LinkedinIcon,
   BehanceIcon,
 } from "./Layout.style";
-import Navbar from "../../components/navbar";
-import Footer from "../../components/footer";
+
 
 import { Button } from "../../components/Button";
 
@@ -45,7 +44,7 @@ function Layout() {
             <li>
               <h2>Hi , i am</h2>
               <h1>Giovana Borges</h1>
-              <h2>Fullstack java </h2>
+              <h2>Fullstack Developer </h2>
               <h3>Do you want to develop something with me?</h3>
               <a
                 href="https://api.whatsapp.com/send?phone=5511991846381&text=oi , eu vim pelo seu site"
@@ -58,10 +57,10 @@ function Layout() {
           </HomeText>
         </HomeInformation>
         <div>
-          <img src={"me.png"} alt="image of Giovana Borges" />
+          <img src={"image-cover-giovana.png"} alt="image of Giovana Borges" />
         </div>
       </HomeWrapper>
-      
+  
     </>
   );
 }
