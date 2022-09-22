@@ -4,11 +4,13 @@ import { UserOutline } from "@styled-icons/typicons/UserOutline";
 import { Mail } from "@styled-icons/entypo/Mail";
 
 export const SobreSection = styled.section`
-  height: 100%;
+   min-height: 100vh;
 
-  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  z-index: 100;
 
-  margin-top: 3rem;
+  align-items: center;
 
   @media only screen and (max-width: 768px) {
     width: auto;
