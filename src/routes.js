@@ -2,20 +2,21 @@ import {BrowserRouter as Router,Routes,Route} from "react-router-dom";
 import Navbar from "./components/navbar";
 import Layout from "./pages/Layout"
 import Project from "./pages/Project";
-import Skills from "./pages/Skills";
+import Services from "./pages/Services";
 import Sobre from "./pages/Sobre"
+import Skills from "./pages/Skills"
 
 export const RoutesApp = ({theme,toggleTheme}) =>{
     return(
     <>
         <Router>
         <Navbar toggleTheme={toggleTheme} theme={theme} />    
-          <Routes>
-          
+          <Routes> 
             <Route element={<Layout/>}  path="/" exact />
             <Route element={<Sobre/>}  path="/sobre"  />
             <Route element={<Project/>}  path="/projects"/>
-            <Route element={<Skills/>}  path="/skill"/>
+            <Route element={<Skills/>} path="/skills"/>
+            <Route element={<Services/>}  path="/services"/>
           </Routes>
         </Router>
         </>

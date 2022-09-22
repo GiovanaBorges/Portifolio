@@ -4,17 +4,17 @@ import { Git } from "../../pages/Layout/Layout.style";
 import { LinkedinIcon } from "../../pages/Layout/Layout.style";
 
 export const FooterWrapper = styled.footer`
-  background-color: #5f5da6;
+  background-color: #2f0f56;
 
   display: flex;
   justify-content: center;
+  color: white;
 `;
 
 export const FooterInformations = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-
   align-items: center;
 
   div {
@@ -40,21 +40,33 @@ export const FooterInformations = styled.div`
 
 export const Behance = styled(BehanceIcon)`
   color: white;
+  opacity:0.5;
+  transition:0.5s;
+
   &:hover {
-    color: black;
+    color: white;
+    opacity:1;
   }
 `;
 
 export const Github = styled(Git)`
   color: white;
+  opacity:0.5;
+  transition:0.5s;
+
   &:hover {
-    color: black;
+    color: white;
+    opacity:1;
   }
 `;
 
 export const Linkedin = styled(LinkedinIcon)`
   color: white;
+  opacity:0.5;
+  transition:0.5s;
+
   &:hover {
-    color: black;
+    color: white;
+    opacity:1;
   }
 `;

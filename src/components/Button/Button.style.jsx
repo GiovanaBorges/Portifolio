@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Btn = styled.button`
-  background-color: #5f5da6;
+  background-color: #4a268d;
   color: white;
 
   height: 3rem;
@@ -13,12 +13,12 @@ export const Btn = styled.button`
   border: none;
   font-weight: 400;
 
-  opacity: 0.5;
+  opacity: 0.7;
   transition: 0.5s;
 
   &:hover {
     opacity: 1;
-    color: ${(props) => (props.theme.title === "light" ? "white" : "black")};
+    color: white;
     cursor: pointer;
   }
 
@@ -28,7 +28,7 @@ export const Btn = styled.button`
 `;
 
 export const Link = styled.a`
-  background-color: #5f5da6;
+  background-color: #4a268d;
   color: white;
 
   height: 3rem;
@@ -37,13 +37,13 @@ export const Link = styled.a`
   padding: 0.5rem;
   text-decoration: none;
 
-  font-size: 25px;
+  font-size: 20px;
 
   border-radius: 10px;
   border: none;
   font-weight: 400;
 
-  opacity: 0.5;
+  opacity: 0.8;
   transition: 0.5s;
 
   &:hover {

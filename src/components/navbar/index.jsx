@@ -24,7 +24,7 @@ function Navbar({ toggleTheme, theme }) {
       ) : (
         <>
           <NavbarWrapper mobile={ChangeNavbarMobile}>
-            <Link to="/">
+            <Link to="/" style={{ textDecoration: 'none' }}>
               <h2>Giovana</h2>
             </Link>
             <h2 className="menu">
@@ -36,13 +36,16 @@ function Navbar({ toggleTheme, theme }) {
               />
             </h2>
             <li>
-              <Link to="/sobre">
+              <Link to="/sobre" style={{ textDecoration: 'none' }}>
                 <h2>About</h2>
               </Link>
-              <Link to="/skill">
+              <Link to="/services" style={{ textDecoration: 'none' }}>
                 <h2>Services</h2>
               </Link>
-              <Link to="/project">
+              <Link to="/skills" style={{ textDecoration: 'none' }}>
+                <h2>Skills</h2>
+              </Link>
+              <Link to="/project" style={{ textDecoration: 'none' }}>
                 <h2>Projects</h2>
               </Link>
               <h2 className="themeSwitcher">

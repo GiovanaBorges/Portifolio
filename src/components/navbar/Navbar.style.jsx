@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Menu } from "@styled-icons/boxicons-regular/Menu";
+import { NavLink } from "react-router-dom";
 
 export const NavbarWrapper = styled.ul`
   display: flex;
@@ -46,6 +47,8 @@ export const NavbarWrapper = styled.ul`
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+
+    text-decoration:none;
 
     width: 40%;
     color: ${(props) => props.theme.title === "light" ? "black" : "white"};
@@ -98,3 +101,10 @@ export const MenuIcon = styled(Menu)`
         cursor: pointer;
       }
 `;
+
+export const LinkBtn = styled(NavLink)`
+.current {
+      color:aqua;
+  }
+
+`

@@ -1,10 +1,5 @@
 import { useState,useContext } from "react";
-import Layout from "./Layout";
-import Navbar from "../components/navbar";
 import Footer from "../components/footer";
-import Sobre from "../pages/Sobre";
-import Project from "../pages/Project";
-import Skills from "../pages/Skills";
 import { Wrapper } from "./App.style";
 
 import { ThemeProvider } from "styled-components";
@@ -26,7 +21,7 @@ function App() {
           <Wrapper>
             <RoutesApp toggleTheme={toggleTheme} theme={theme} />
           </Wrapper>
-        <Footer />
+          <Footer />
     </ThemeProvider>
   );
 }
