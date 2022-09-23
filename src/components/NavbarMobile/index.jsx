@@ -16,17 +16,17 @@ function NavbarMobile({ toggleTheme, theme, mobile }) {
           </h2>
         </li>
         <li>
-          <Link to="Home">
+          <Link to="/home">
             <h2>Giovana</h2>
           </Link>
 
-          <Link to="Sobre">
+          <Link to="/sobre">
             <h2>About</h2>
           </Link>
-          <Link to="Skills">
+          <Link to="/skills" >
             <h2>Services</h2>
           </Link>
-          <Link to="Project">
+          <Link to="/projects">
             <h2>Projects</h2>
           </Link>
         </li>
