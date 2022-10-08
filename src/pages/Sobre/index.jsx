@@ -44,7 +44,7 @@ function Sobre() {
             </Fade>
         
             <Fade bottom>
-            <img
+            <img id="image"
               src={"blade-runner-cover.jpg"} alt="coding" 
             />
           </Fade>

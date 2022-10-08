@@ -101,7 +101,7 @@ export const SobreInformations = styled.div`
         font-size: 20px;
       }
     }
-    img {
+    #image {
       width: 100%;
       border-radius: 10%;
     }

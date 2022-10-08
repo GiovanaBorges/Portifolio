@@ -59,6 +59,11 @@ function Navbar({ toggleTheme, theme }) {
                   <h2>Projects</h2>
                 </LinkBtn>
               </Fade>
+              <Fade top>
+                <LinkBtn to="/contact" exact activeClassName="current" style={{ textDecoration: 'none' }}>
+                  <h2>Contact</h2>
+                </LinkBtn>
+              </Fade>
               <h2 className="themeSwitcher">
                 <ThemeSwitcher toggleTheme={toggleTheme} theme={theme} />
               </h2>
