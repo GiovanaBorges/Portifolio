@@ -31,7 +31,7 @@ function Sobre() {
                 </li>
                 <li>
                 <h1>
-                  <Email size="25" /> gigi12345as17@gmail.com
+                  <Email size="25" /> giovanaborges.contato@gmail.com
                 </h1>
                 </li>
                 <li>
