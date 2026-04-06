@@ -82,7 +82,7 @@ function Layout() {
       >
         <div className="w-52 h-52 md:w-72 md:h-72 lg:w-96 lg:h-96">
           <img
-            src="/portfolio/image-cover-home.jpg"
+            src="/Portfolio/image-cover-home.jpg"
             alt="image of Giovana Borges"
             className="w-full h-full object-cover rounded-full border-2 border-[#8E37F0] shadow-xl hover:scale-105 transition duration-500"
           />
