@@ -68,7 +68,7 @@ function Sobre() {
 
           {/* CV */}
           <a
-            href="/GiovanaBorges-BackendJava.pdf"
+            href="/portfolio/GiovanaBorges-BackendJava.pdf"
             download
             className="inline-block px-6 py-2 bg-[#2f0f56] text-white rounded-lg hover:bg-[#8E37F0] transition"
           >

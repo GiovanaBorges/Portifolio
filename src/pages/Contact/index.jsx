@@ -56,7 +56,7 @@ function Contact() {
           "
           style={{
             backgroundImage:
-              "url('background-contact.jpeg')",
+              "url('/portfolio/background-contact.jpeg')",
           }}
         >
           <h1 className="text-6xl mb-4 text-white">Contact</h1>
