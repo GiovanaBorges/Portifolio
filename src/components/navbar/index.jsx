@@ -1,78 +1,111 @@
-import React, { useState } from "react";
-import { NavbarWrapper, MenuIcon,LinkBtn } from "./Navbar.style";
-import NavbarMobile from "../NavbarMobile";
-import ThemeSwitcher from "../ThemeSwitcher";
-import Fade from 'react-reveal/Fade';
+import { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
+import { HiMenu } from "react-icons/hi";
 
-function Navbar({ toggleTheme, theme }) {
-  const [NavbarIsMobile, setNavbarIsMobile] = useState(false);
+function Navbar({ toggleTheme, darkMode }) {
+  const [open, setOpen] = useState(false);
 
-  function ChangeNavbarMobile() {
-    setNavbarIsMobile(NavbarIsMobile ? false : true);
-  }
+  const linkStyle =
+    "text-lg font-light hover:text-[#5f5da6] transition";
+
+  const activeStyle = "text-[#5f5da6]";
 
   return (
-    <>
-      {NavbarIsMobile ? (
-        <>
-          <NavbarMobile
-            toggleTheme={toggleTheme}
-            theme={theme}
-            mobile={ChangeNavbarMobile}
-          />
-        </>
-      ) : (
-        <>
-        
-          <NavbarWrapper mobile={ChangeNavbarMobile}>
-          <Fade top>
-              <LinkBtn to="/" activeClassName="current" exact style={{ textDecoration: 'none' }}>
-                <h2>Giovana</h2>
-              </LinkBtn>
-            </Fade>
-            <h2 className="menu">
-              <MenuIcon
-                size="25"
-                onClick={() => {
-                  ChangeNavbarMobile();
-                }}
-              />
-            </h2>
-            <li>
-            <Fade top>
-                <LinkBtn to="/sobre" exact activeClassName="current" style={{ textDecoration: 'none' }}>
-                  <h2>About</h2>
-                </LinkBtn>
-              </Fade>
-              <Fade top>
-                <LinkBtn to="/services" exact activeClassName="current" style={{ textDecoration: 'none' }}>
-                  <h2>Services</h2>
-                </LinkBtn>
-              </Fade>
-              <Fade top>
-                <LinkBtn to="/skills" exact activeClassName="current"  style={{ textDecoration: 'none' }}>
-                  <h2>Skills</h2>
-                </LinkBtn>
-              </Fade>
-              <Fade top>
-                <LinkBtn to="/projects" exact activeClassName="current" style={{ textDecoration: 'none' }}>
-                  <h2>Projects</h2>
-                </LinkBtn>
-              </Fade>
-              <Fade top>
-                <LinkBtn to="/contact" exact activeClassName="current" style={{ textDecoration: 'none' }}>
-                  <h2>Contact</h2>
-                </LinkBtn>
-              </Fade>
-              <h2 className="themeSwitcher">
-                <ThemeSwitcher toggleTheme={toggleTheme} theme={theme} />
-              </h2>
-            </li>
-          </NavbarWrapper>
-         
-        </>
+    <header className="fixed top-0 w-full z-50 bg-white dark:bg-[#262626] shadow-sm">
+
+      <div className="flex justify-between items-center h-20 px-6 md:px-12">
+
+        {/* Logo */}
+        <Link to="/">
+          <h2 className="text-xl font-normal hover:text-[#8E37F0] transition">
+            Giovana
+          </h2>
+        </Link>
+
+        {/* Desktop Menu */}
+        <nav className="hidden md:flex items-center gap-8">
+
+          <NavLink
+            to="/sobre"
+            className={({ isActive }) =>
+              `${linkStyle} ${isActive ? activeStyle : ""}`
+            }
+          >
+            About
+          </NavLink>
+
+          <NavLink
+            to="/skills"
+            className={({ isActive }) =>
+              `${linkStyle} ${isActive ? activeStyle : ""}`
+            }
+          >
+            Skills
+          </NavLink>
+
+          <NavLink
+            to="/projects"
+            className={({ isActive }) =>
+              `${linkStyle} ${isActive ? activeStyle : ""}`
+            }
+          >
+            Projects
+          </NavLink>
+
+          <NavLink
+            to="/contact"
+            className={({ isActive }) =>
+              `${linkStyle} ${isActive ? activeStyle : ""}`
+            }
+          >
+            Contact
+          </NavLink>
+
+      
+        </nav>
+
+        {/* Mobile Button */}
+        <button
+          className="md:hidden"
+          onClick={() => setOpen(!open)}
+        >
+          <HiMenu size={28} />
+        </button>
+      </div>
+
+      {/* Mobile Menu */}
+      {open && (
+        <div className="md:hidden flex flex-col items-center gap-6 pb-6 bg-white dark:bg-[#262626]">
+
+          <NavLink to="/sobre" onClick={() => setOpen(false)} className={linkStyle}>
+            About
+          </NavLink>
+
+          <NavLink to="/services" onClick={() => setOpen(false)} className={linkStyle}>
+            Services
+          </NavLink>
+
+          <NavLink to="/skills" onClick={() => setOpen(false)} className={linkStyle}>
+            Skills
+          </NavLink>
+
+          <NavLink to="/projects" onClick={() => setOpen(false)} className={linkStyle}>
+            Projects
+          </NavLink>
+
+          <NavLink to="/contact" onClick={() => setOpen(false)} className={linkStyle}>
+            Contact
+          </NavLink>
+
+          <button
+            onClick={toggleTheme}
+            className="p-2 rounded-lg bg-gray-200 dark:bg-gray-800 transition"
+          >
+            {darkMode ? "🌙" : "🌞"}
+          </button>
+        </div>
       )}
-    </>
+    </header>
   );
 }
 
