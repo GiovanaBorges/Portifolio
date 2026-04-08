@@ -26,7 +26,7 @@ function Project() {
             </p>
 
             <h3 className="font-light mb-4">
-              Api for booking management, built with Spring Boot with Spring Security, Keycloak and integrated with Redis for caching.
+              Booking management API with authentication via Keycloak, role-based authorization using Spring Security, and Redis caching to improve performance. Designed with scalable architecture patterns.
             </h3>
 
             <a
@@ -49,7 +49,7 @@ function Project() {
             </p>
 
             <h3 className="font-light mb-4">
-              Api for notification management, built with Spring Boot, RabbitMQ for asynchronous communication using websocket and integrated with React frontend.
+              Event-driven notification service using RabbitMQ for asynchronous communication and WebSockets for real-time updates, integrated with a React frontend.
             </h3>
 
             <a
@@ -72,7 +72,7 @@ function Project() {
             </p>
 
             <h3 className="font-light mb-4">
-              Helm chart for deploying Spring Boot applications on Kubernetes.
+              Kubernetes deployment setup using Helm charts to manage and scale Spring Boot microservices.
             </h3>
 
             <a
