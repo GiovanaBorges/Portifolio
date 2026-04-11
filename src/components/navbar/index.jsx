@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { HiMenu } from "react-icons/hi";
 
-function Navbar({ toggleTheme, darkMode }) {
+function Navbar() {
   const [open, setOpen] = useState(false);
 
   const linkStyle =
@@ -25,14 +25,6 @@ function Navbar({ toggleTheme, darkMode }) {
         {/* Desktop Menu */}
         <nav className="hidden md:flex items-center gap-8">
 
-          <NavLink
-            to="/sobre"
-            className={({ isActive }) =>
-              `${linkStyle} ${isActive ? activeStyle : ""}`
-            }
-          >
-            About
-          </NavLink>
 
           <NavLink
             to="/skills"
@@ -52,15 +44,6 @@ function Navbar({ toggleTheme, darkMode }) {
             Projects
           </NavLink>
 
-          <NavLink
-            to="/contact"
-            className={({ isActive }) =>
-              `${linkStyle} ${isActive ? activeStyle : ""}`
-            }
-          >
-            Contact
-          </NavLink>
-
       
         </nav>
 
@@ -77,14 +60,6 @@ function Navbar({ toggleTheme, darkMode }) {
       {open && (
         <div className="md:hidden flex flex-col items-center gap-6 pb-6 bg-white dark:bg-[#262626]">
 
-          <NavLink to="/sobre" onClick={() => setOpen(false)} className={linkStyle}>
-            About
-          </NavLink>
-
-          <NavLink to="/services" onClick={() => setOpen(false)} className={linkStyle}>
-            Services
-          </NavLink>
-
           <NavLink to="/skills" onClick={() => setOpen(false)} className={linkStyle}>
             Skills
           </NavLink>
@@ -93,16 +68,6 @@ function Navbar({ toggleTheme, darkMode }) {
             Projects
           </NavLink>
 
-          <NavLink to="/contact" onClick={() => setOpen(false)} className={linkStyle}>
-            Contact
-          </NavLink>
-
-          <button
-            onClick={toggleTheme}
-            className="p-2 rounded-lg bg-gray-200 dark:bg-gray-800 transition"
-          >
-            {darkMode ? "🌙" : "🌞"}
-          </button>
         </div>
       )}
     </header>
